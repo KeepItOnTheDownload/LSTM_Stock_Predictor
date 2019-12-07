@@ -178,7 +178,8 @@ I found that "Tanh" provided me with the lowest MAE score in this challenge. How
     374/374 [==============================] - 2s 5ms/sample - loss: 0.0022 - mae: 0.0341 - accuracy: 0.0027
 
 #### Evaluate: 
-    =======================================] - 2s 13ms/sample - loss: 0.0031 - mae: 0.0500 - accuracy: 0.0062   
+    =======================================] - 2s 13ms/sample -
+    loss: 0.0031 - mae: 0.0500 - accuracy: 0.0062   
     5.00% (+/- 0.00%)
 
 - - -
@@ -186,7 +187,18 @@ I found that "Tanh" provided me with the lowest MAE score in this challenge. How
 
 The FNG model compares fear and greed sentiment. Here we are not getting a proper model to predict from. However, this makes sense. Due to the lack of regulation, true knowledge and understanding of the crypto market. The data leans heavely towards fear and greed in the market even as the price exceeds the predicted values fairly consistently. The correlation does not give us the oppurutnity to predict price using this sentiment. 
 
+### 10 Day Window 
 ![deep-learning.jpg](Images/bokeh_plot_FNG.png)
+
+#### Training
+    Epoch 50/50
+    371/371 [==============================] - 3s 9ms/sample - 
+    loss: 0.0380 - mae: 0.1614 - accuracy: 0.0027
+
+#### Evaluate 
+    =======================================] - 2s 13ms/sample -
+    loss: 0.1089 - mae: 0.2444 - accuracy: 0.0000e+00
+    24.44% (+/- 0.00%)
 - - -
 <details close><summary>Notes On Testing</summary>
 
