@@ -16,7 +16,7 @@ Due to the volatility of cryptocurrency speculation, investors will often try to
 [FNG Sentiment Notebook](Code/lstm_stock_predictor_fng.ipynb)
 
 - - -
-<details open><summary>Requirements</summary>
+<details close><summary>Requirements</summary>
 
 ### Instructions
 
@@ -90,6 +90,7 @@ For training, use at least 10 estimators for both models.
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 </details>
 
+----
 
 ##  Analysis of Model Performance: 
 
@@ -180,14 +181,14 @@ I found that "Tanh" provided me with the lowest MAE score in this challenge. How
     =======================================] - 2s 13ms/sample - loss: 0.0031 - mae: 0.0500 - accuracy: 0.0062   
     5.00% (+/- 0.00%)
 
-
+- - -
 ## FNG Model Performance
 
 The FNG model compares fear and greed sentiment. Here we are not getting a proper model to predict from. However, this makes sense. Due to the lack of regulation, true knowledge and understanding of the crypto market. The data leans heavely towards fear and greed in the market even as the price exceeds the predicted values fairly consistently. The correlation does not give us the oppurutnity to predict price using this sentiment. 
 
 ![deep-learning.jpg](Images/bokeh_plot_FNG.png)
-
-<details open><summary>Notes On Testing</summary>
+- - -
+<details close><summary>Notes On Testing</summary>
 
 ### Testing: 
 - Also attempted to smooth with Savgol_Filter() however, saw higher loss, may be coding error. 
